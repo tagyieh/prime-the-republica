@@ -43,7 +43,7 @@ def download_session():
 
     # Save to file
     file_name = session_n + "_" + session_date
-    with open('../data/raw/'+file_name+".txt",'w') as file:
+    with open('./data/raw/'+file_name+".txt",'w') as file:
         file.write(r.text)
     print("\t✅ Parliament Session Download complete.\n")
     return r.text
